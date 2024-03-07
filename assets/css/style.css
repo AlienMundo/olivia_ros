@@ -1,0 +1,236 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#contenedor-todo {
+  width: 1280px;
+}
+
+/* ------------------ NAVBAR ------------------ */
+
+.navbar {
+  background-color: #373A3C !important;
+  padding: 0.5rem;
+}
+
+.navbar-collapse {
+  background-color: #373A3C;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar-toggler {
+  border-color: #777777;
+  z-index: 1;
+}
+
+.navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(119,119,119, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+} 
+
+/* --------------- SECCION HERO --------------- */
+
+.seccion-hero {
+  background-image: url(../img/bg-hero.jpg);
+  background-size: cover;
+  height: 630px;
+  background-position: 50% 70%;
+
+}
+
+.contenedor-hero {
+  text-align: right;
+  color: #fff;
+  line-height: 2rem;
+  position: absolute;
+  top: 15%;
+  right: 26%;
+}
+
+.texto-hero h1 {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.texto-hero p {
+  width: 616px;
+  display: inline-block;
+}
+
+.botones-hero {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+/* --------------- ACERCA DE MI --------------- */
+
+.contenedor-acerca {
+  text-align: center;
+  margin: 4rem 8rem;
+}
+
+.texto-acerca {
+  margin-bottom: 2rem;
+}
+
+.texto-acerca h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 1rem;;
+}
+
+.texto-acerca p {
+  width: 932px;
+  display: inline-block;
+  text-align: center;
+
+}
+
+.contenedor-acerca i {
+  font-size: 2.5rem;  
+  margin-bottom: 2rem;
+}
+
+.seccion-acerca h4 {
+  margin-bottom: 2rem;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.seccion-acerca p {
+  width: 300px;
+
+}
+
+/* --------------- MIS TRABAJOS --------------- */
+
+.mis-trabajos {
+  background-color: #17A2B8;
+  padding: 5rem 3rem 3rem 3rem;
+}
+
+.titulo-trabajos {
+  margin-bottom: 3rem;
+  font-size: 50px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+
+.card {
+  width: 300px;
+  
+}
+
+.card img {
+  height: 231px;
+}
+
+.cartas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+
+/* ---------------- CONTACTAME ---------------- */
+
+.contenedor-contacto {
+  padding: 5rem 10rem;
+}
+
+.contacto-texto h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+
+.input-mensaje {
+  padding-bottom: 5rem;
+}
+
+
+/* ------------------ FOOTER ------------------ */
+
+footer {
+  background-color: #0F0F0F;
+  height: 74px;
+  text-align: center;
+  color: #FFFFFF;
+  font-weight: 200;
+  padding-top: 1.5rem;
+}
+
+/* ------------------- MEDIA ------------------ */
+
+/* Hero */
+
+@media screen and (max-width: 990px) {
+  .seccion-hero {
+    background-position-x: 27%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .contenedor-hero {
+    top: 19%;
+    right: 10%;
+    position: relative !important;
+
+  }
+
+  .texto-hero h1 {
+    font-size: 40px;
+  }
+
+  .texto-hero p {
+    width: 335px;
+
+  }
+}
+
+/* Acerca de */
+
+
+
+@media screen and (max-width: 990px) {
+  .texto-acerca h2 {
+    font-size: 30px;
+  }
+
+  .contenedor-acerca {
+    text-align: center;
+    margin: 4rem 2rem;
+  }
+
+  .texto-acerca p {
+    width: 346px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+/* Contactame */
+
+@media screen and (max-width: 990px) {
+  .contenedor-contacto {
+    padding: 5rem 1rem;
+  }
+
+  .contenedor-contacto p {
+    display: none;
+  }
+
+  .contenedor-contacto h2 {
+    font-size: 30px;
+    margin-bottom: 2rem;
+  }
+}
